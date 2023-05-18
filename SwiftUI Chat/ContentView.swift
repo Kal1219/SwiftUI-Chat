@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+struct ChatMessage: Hashable
+{
+    var message: String
+    var avatar: String
+}
+
+var messages = [ChatMessage(message: "Simona", avatar: "A"),
+                ChatMessage(message: "La mona", avatar: "B")]
+
+
 struct ContentView: View {
     var body: some View {
         VStack {
