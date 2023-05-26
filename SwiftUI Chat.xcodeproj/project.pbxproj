@@ -14,6 +14,7 @@
 		381B923A2A16ADC20049612A /* SwiftUI_ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381B92392A16ADC20049612A /* SwiftUI_ChatTests.swift */; };
 		381B92442A16ADC20049612A /* SwiftUI_ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381B92432A16ADC20049612A /* SwiftUI_ChatUITests.swift */; };
 		381B92462A16ADC20049612A /* SwiftUI_ChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381B92452A16ADC20049612A /* SwiftUI_ChatUITestsLaunchTests.swift */; };
+		381B92532A16B7F40049612A /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381B92522A16B7F40049612A /* ChatController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		381B923F2A16ADC20049612A /* SwiftUI ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI ChatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		381B92432A16ADC20049612A /* SwiftUI_ChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ChatUITests.swift; sourceTree = "<group>"; };
 		381B92452A16ADC20049612A /* SwiftUI_ChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		381B92522A16B7F40049612A /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				381B92282A16ADC00049612A /* SwiftUI_ChatApp.swift */,
 				381B922A2A16ADC00049612A /* ContentView.swift */,
+				381B92522A16B7F40049612A /* ChatController.swift */,
 				381B922C2A16ADC20049612A /* Assets.xcassets */,
 				381B922E2A16ADC20049612A /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				381B922B2A16ADC00049612A /* ContentView.swift in Sources */,
 				381B92292A16ADC00049612A /* SwiftUI_ChatApp.swift in Sources */,
+				381B92532A16B7F40049612A /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

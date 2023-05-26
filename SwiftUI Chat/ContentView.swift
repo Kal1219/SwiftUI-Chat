@@ -11,21 +11,47 @@ struct ChatMessage: Hashable
 {
     var message: String
     var avatar: String
+    var color: Color
 }
 
-var messages = [ChatMessage(message: "Simona", avatar: "A"),
-                ChatMessage(message: "La mona", avatar: "B")]
+var messages = [ChatMessage(message: "Simona", avatar: "A", color: .red),
+                ChatMessage(message: "La mona", avatar: "B", color: .blue)]
 
+struct ChatRow: View
+{
+    var chatMessage: ChatMessage
+    
+    var body: some View
+    {
+        HStack
+        {
+            Group
+            {
+                Text(chatMessage.avatar)
+                Text(chatMessage.message)
+                    .bold()
+                    .padding(10)
+                    .foregroundColor(Color(.white))
+                    .background(chatMessage.color)
+                    .cornerRadius(10)
+            }
+        }
+    }
+}
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack
+        {
+            VStack
+            {
+                List{
+                    ForEach(messages, id: \.self) { msg in
+                        ChatRow(chatMessage: msg)
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
